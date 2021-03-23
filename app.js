@@ -19,7 +19,7 @@ app.use('/users', usersRouter)
 
 const startApp = async () => {
   try {
-    await mongoose.connect('mongodb://localhost:27017/3tier', {
+    await mongoose.connect('mongodb://mongo/3tier', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true
